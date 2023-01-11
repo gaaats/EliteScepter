@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navvgammme"
+    app:startDestination="@id/onnnnFragment">
+
+    <fragment
+        android:id="@+id/initialFragment"
+        android:name="com.sinyee.babyb.gaaaaame.frgtjgttg.InitialFragment"
+        android:label="fragment_initial"
+        tools:layout="@layout/fragment_initial">
+        <action
+            android:id="@+id/action_initialFragment_to_chooseImageFragment"
+            app:destination="@id/chooseImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingGameFragment"
+        android:name="com.sinyee.babyb.gaaaaame.frrrrrr.LoadingGameFragment"
+        android:label="fragment_loading_game"
+        tools:layout="@layout/fragment_loading_game">
+        <action
+            android:id="@+id/action_loadingGameFragment_to_gaaaamerFragment"
+            app:destination="@id/gaaaamerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseImageFragment"
+        android:name="com.sinyee.babyb.gaaaaame.fraaau.ChooseImageFragment"
+        android:label="fragment_choose_image"
+        tools:layout="@layout/fragment_choose_image">
+        <action
+            android:id="@+id/action_chooseImageFragment_to_loadingGameFragment"
+            app:destination="@id/loadingGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gaaaamerFragment"
+        android:name="com.sinyee.babyb.gaaaaame.frgtjgttg.GaaaamerFragment"
+        android:label="fragment_gaaaamer"
+        tools:layout="@layout/fragment_gaaaamer" >
+        <action
+            android:id="@+id/action_gaaaamerFragment_to_loadingGameFragment"
+            app:destination="@id/loadingGameFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loadingGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onnnnFragment"
+        android:name="com.sinyee.babyb.OnnnnFragment"
+        android:label="fragment_onnnn"
+        tools:layout="@layout/fragment_onnnn" >
+        <action
+            android:id="@+id/action_onnnnFragment_to_tvvvvvvFragment"
+            app:destination="@id/tvvvvvvFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvvvvvvFragment"
+        android:name="com.sinyee.babyb.TvvvvvvFragment"
+        android:label="fragment_tvvvvvv"
+        tools:layout="@layout/fragment_tvvvvvv" >
+        <action
+            android:id="@+id/action_tvvvvvvFragment_to_threeeeeeeeeeFragment"
+            app:destination="@id/threeeeeeeeeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeeeeeeeeeFragment"
+        android:name="com.sinyee.babyb.ThreeeeeeeeeeFragment"
+        android:label="fragment_threeeeeeeeee"
+        tools:layout="@layout/fragment_threeeeeeeeee" >
+        <action
+            android:id="@+id/action_threeeeeeeeeeFragment_to_foooooooooorFragment"
+            app:destination="@id/foooooooooorFragment" />
+        <action
+            android:id="@+id/action_threeeeeeeeeeFragment_to_initialFragment"
+            app:destination="@id/initialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foooooooooorFragment"
+        android:name="com.sinyee.babyb.FoooooooooorFragment"
+        android:label="fragment_foooooooooor"
+        tools:layout="@layout/fragment_foooooooooor" >
+        <action
+            android:id="@+id/action_foooooooooorFragment_to_initialFragment"
+            app:destination="@id/initialFragment" />
+    </fragment>
+</navigation>
